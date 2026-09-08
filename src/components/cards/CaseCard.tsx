@@ -17,8 +17,8 @@ interface CaseCardProps {
  *
  * Imagem em sangria com véu claro vindo da esquerda, para o conteúdo ficar
  * legível sobre qualquer foto. O destaque aceita métrica ("+223%") ou palavra
- * estratégica ("Autoridade") no mesmo peso tipográfico — a grade não muda
- * quando ainda não existe número confirmado.
+ * estratégica ("Autoridade") no mesmo peso tipográfico, então a grade fica
+ * idêntica nos dois formatos.
  */
 export function CaseCard({ study }: CaseCardProps) {
   return (

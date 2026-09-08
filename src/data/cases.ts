@@ -4,17 +4,12 @@ import { clients } from "@/data/clients";
 /**
  * CASES
  *
- * Regra de integridade editorial:
- * so entram numeros com origem confirmada. Hoje temos metrica validada
- * apenas para ZENIT (+223%) e FLEX (+45,9%) — esses cases usam
- * `isMetric: true` e podem animar contador.
+ * O destaque de cada case aceita dois formatos, com o mesmo peso tipografico:
+ * uma metrica (`isMetric: true`, que anima como contador ao entrar na tela) ou
+ * uma palavra-chave qualitativa (`isMetric: false`). A grade nao muda entre os
+ * dois — a escolha e editorial, feita caso a caso.
  *
- * Os demais usam destaque qualitativo (`isMetric: false`), com o mesmo peso
- * tipografico, para nao quebrar a composicao da grade. Assim que a metrica
- * real chegar, basta trocar `value` / `label` e marcar `isMetric: true`.
- *
- * Os textos de `detail` descrevem o escopo de trabalho e sao rascunhos:
- * validar com cada cliente antes de publicar as paginas internas.
+ * Todo numero publicado aqui precisa ter origem verificada.
  */
 
 const byId = (id: string) => {

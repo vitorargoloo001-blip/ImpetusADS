@@ -23,8 +23,8 @@ export interface ImageAsset {
 
 /**
  * Destaque de um case.
- * `value` aceita numero ("+223%") ou palavra estrategica ("Autoridade"),
- * para nunca precisarmos inventar metrica onde nao existe dado real.
+ * `value` aceita numero ("+223%") ou palavra estrategica ("Autoridade"):
+ * os dois formatos ocupam o mesmo espaco na composicao.
  */
 export interface CaseHighlight {
   /** Numero ou palavra-chave em destaque. */

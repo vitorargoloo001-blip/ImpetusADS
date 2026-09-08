@@ -3,9 +3,8 @@
 O repositório já está pronto e commitado localmente. Faltam três passos que
 exigem login na sua conta.
 
-> **Este será o primeiro build real do projeto.** Não há Node.js nesta máquina,
-> então `npm run build` nunca rodou. A Vercel vai compilar do zero. Se algo
-> falhar, o log dela aponta o arquivo e a linha — me mande que eu corrijo.
+> A Vercel compila o projeto do zero a cada push. Se um build falhar, o log
+> aponta o arquivo e a linha exatos.
 
 ---
 

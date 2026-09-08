@@ -1,10 +1,13 @@
 # Imagens do site
 
-Todos os arquivos desta pasta são **placeholders tonais** gerados para que o
-site funcione, mantenha as proporções corretas e não sofra layout shift.
+Cada arquivo ocupa um slot fixo do layout. Para trocar uma foto, substitua o
+arquivo **mantendo o mesmo nome e a mesma proporção** — nada no código precisa
+mudar. Os textos alternativos ficam em `src/data/` e nos componentes de seção;
+atualize-os quando o conteúdo da foto mudar.
 
-Substitua cada arquivo pela fotografia real **mantendo o mesmo nome e a mesma
-proporção**. Nada no código precisa mudar.
+A pasta `brand/` guarda o logotipo em três tons (laranja, branco e tinta), com
+fundo transparente. As contraformas de "ADS" são vazadas: deixam passar a cor
+de fundo, então o logotipo pede superfície de contraste suficiente.
 
 ## Direção de arte
 

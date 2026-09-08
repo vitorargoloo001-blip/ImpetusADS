@@ -1,11 +1,8 @@
 /**
  * Prova social do hero.
  *
- * `brandsServed` comeca em null de proposito: o numero de marcas atendidas
- * precisa ser confirmado antes de virar afirmacao publica. Enquanto for null,
- * o site usa a versao sem numero — a composicao nao muda.
- *
- * Assim que o dado estiver confirmado, basta preencher (ex.: 50).
+ * Com `brandsServed` preenchido, a frase exibe o número de marcas atendidas.
+ * Com `null`, usa a versão sem número — a composição é a mesma nos dois casos.
  */
 export const socialProof: {
   brandsServed: number | null;
