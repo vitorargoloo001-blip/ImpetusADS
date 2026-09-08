@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { PageHero } from "@/components/layout/PageHero";
 import { Reveal } from "@/components/motion/Reveal";
 import { FinalCTA } from "@/components/sections/FinalCTA";
@@ -61,12 +62,12 @@ export default function InsightsPage() {
                 cases mostram como o método se aplica na prática.
               </p>
 
-              <a
+              <Link
                 href="/cases"
                 className="mt-8 inline-flex h-12 items-center rounded-full bg-ink px-7 text-[0.875rem] font-medium text-white transition-colors hover:bg-ink-soft"
               >
                 Ver cases
-              </a>
+              </Link>
             </div>
           </Reveal>
         </div>

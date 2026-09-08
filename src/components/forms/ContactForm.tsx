@@ -1,5 +1,6 @@
 "use client";
 
+import Link from "next/link";
 import { useRef, useState, type FormEvent } from "react";
 import { ArrowRight } from "@/components/ui/Icons";
 import { segments } from "@/data/segments";
@@ -236,9 +237,9 @@ export function ContactForm() {
 
         <p className="text-[0.75rem] leading-relaxed text-muted-soft sm:max-w-xs sm:text-right">
           Ao enviar, você concorda com nossa{" "}
-          <a href="/privacidade" className="underline hover:text-ink">
+          <Link href="/privacidade" className="underline hover:text-ink">
             Política de Privacidade
-          </a>
+          </Link>
           .
         </p>
       </div>
