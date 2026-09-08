@@ -1,0 +1,15 @@
+# Normaliza quebras de linha: o repositório guarda LF, o Windows continua
+# usando CRLF localmente. Evita que o build na Vercel (Linux) veja diferenças.
+* text=auto eol=lf
+
+# Binários não devem sofrer normalização
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.webp binary
+*.avif binary
+*.ico binary
+*.woff binary
+*.woff2 binary
+*.mp4 binary
+*.webm binary
