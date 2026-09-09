@@ -4,7 +4,7 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useCallback, useEffect, useState } from "react";
 import { MobileMenu } from "@/components/navigation/MobileMenu";
-import { ArrowRight, Menu } from "@/components/ui/Icons";
+import { ArrowRight, Menu, Whatsapp } from "@/components/ui/Icons";
 import { Wordmark } from "@/components/ui/Wordmark";
 import { mainNav } from "@/data/navigation";
 import { useScrolled } from "@/hooks/useScrolled";
@@ -106,6 +106,18 @@ export function Header() {
             >
               Falar com um especialista
               <ArrowRight className="arrow-shift size-4" />
+            </button>
+
+            {/* No celular não cabe o botão com rótulo, mas deixar só o menu
+                esconde o contato atrás de dois toques. Este ícone mantém o
+                WhatsApp a um toque de distância. */}
+            <button
+              type="button"
+              onClick={() => openWhatsapp("header_mobile")}
+              aria-label="Falar com um especialista no WhatsApp"
+              className="inline-flex size-11 items-center justify-center rounded-full bg-ink text-white transition-colors duration-300 hover:bg-ink-soft sm:hidden"
+            >
+              <Whatsapp className="size-[1.15rem]" />
             </button>
 
             <button

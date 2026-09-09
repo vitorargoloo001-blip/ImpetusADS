@@ -296,6 +296,28 @@
   animation-play-state: paused;
 }
 
+/* No celular a tela inteira tem a largura de um card: uma máscara de 7% come
+   quase 30px de cada lado e o conteúdo parece cortado no meio da palavra.
+   Aqui ela encolhe para sugerir movimento sem truncar. */
+@media (max-width: 640px) {
+  .marquee {
+    -webkit-mask-image: linear-gradient(
+      to right,
+      transparent 0%,
+      #000 3%,
+      #000 97%,
+      transparent 100%
+    );
+    mask-image: linear-gradient(
+      to right,
+      transparent 0%,
+      #000 3%,
+      #000 97%,
+      transparent 100%
+    );
+  }
+}
+
 /* sem movimento: vira um trilho de rolagem manual */
 @media (prefers-reduced-motion: reduce) {
   .marquee {
@@ -381,6 +403,17 @@
     scroll-behavior: auto !important;
   }
 
+  .reveal,
+  .reveal-media {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+/* Rede de segurança: o conteúdo só nasce invisível porque há JavaScript para
+   revelá-lo. Sem script, ele aparece direto — em vez de a página inteira
+   ficar em branco. */
+@media (scripting: none) {
   .reveal,
   .reveal-media {
     opacity: 1;

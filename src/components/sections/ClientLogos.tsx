@@ -23,7 +23,7 @@ export function ClientLogos() {
                 key={brand.id}
                 className="flex shrink-0 items-center justify-center text-ink opacity-65 transition-opacity duration-500 hover:opacity-100"
               >
-                <ClientLogo brand={brand} size="md" />
+                <ClientLogo brand={brand} size="sm" className="sm:scale-125" />
               </div>
             ))}
           </Marquee>

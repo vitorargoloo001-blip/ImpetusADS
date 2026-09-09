@@ -42,11 +42,11 @@ export function CaseCard({ study }: CaseCardProps) {
         {/* Véu de leitura */}
         <div
           aria-hidden="true"
-          className="absolute inset-0 -z-10 bg-gradient-to-r from-surface via-surface/88 to-surface/25"
+          className="absolute inset-0 -z-10 bg-gradient-to-r from-surface via-surface/78 to-surface/10"
         />
         <div
           aria-hidden="true"
-          className="absolute inset-0 -z-10 bg-gradient-to-t from-surface/80 via-transparent to-transparent"
+          className="absolute inset-0 -z-10 bg-gradient-to-t from-surface/65 via-transparent to-transparent"
         />
 
         <div>

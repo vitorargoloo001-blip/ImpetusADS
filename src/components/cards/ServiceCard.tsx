@@ -40,7 +40,7 @@ export function ServiceCard({ service }: ServiceCardProps) {
               {service.title}
             </h3>
 
-            <p className="mt-2 line-clamp-3 text-[0.75rem] leading-[1.55] text-muted lg:text-[0.8125rem]">
+            <p className="mt-2 line-clamp-2 text-[0.75rem] sm:line-clamp-3 leading-[1.55] text-muted lg:text-[0.8125rem]">
               {service.summary}
             </p>
           </div>
