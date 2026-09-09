@@ -50,7 +50,7 @@ export function CaseCard({ study }: CaseCardProps) {
         />
         <div
           aria-hidden="true"
-          className="absolute inset-0 -z-10 bg-gradient-to-t from-surface/65 via-transparent to-transparent"
+          className="absolute inset-0 -z-10 bg-gradient-to-t from-surface via-surface/70 to-transparent"
         />
 
         <div>
