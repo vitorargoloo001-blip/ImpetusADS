@@ -24,7 +24,7 @@ export function ServicesSection() {
           {services.map((service) => (
             <div
               key={service.slug}
-              className="h-[15rem] w-[17.5rem] sm:h-[14.5rem] sm:w-[23rem]"
+              className="h-[16rem] w-[18.5rem] sm:h-[14.5rem] sm:w-[23rem]"
             >
               <ServiceCard service={service} />
             </div>

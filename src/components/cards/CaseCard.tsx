@@ -19,6 +19,10 @@ interface CaseCardProps {
  * legível sobre qualquer foto. O destaque aceita métrica ("+223%") ou palavra
  * estratégica ("Autoridade") no mesmo peso tipográfico, então a grade fica
  * idêntica nos dois formatos.
+ *
+ * O `isolate` é obrigatório: a foto e os véus usam z-index negativo para ficar
+ * atrás do conteúdo. Sem um contexto de empilhamento próprio, eles escapam do
+ * card e vão parar atrás do fundo da seção — a foto some por completo.
  */
 export function CaseCard({ study }: CaseCardProps) {
   return (
@@ -27,7 +31,7 @@ export function CaseCard({ study }: CaseCardProps) {
         href={`/cases/${study.slug}`}
         onClick={() => track(analyticsEvents.caseOpen, { case: study.slug })}
         aria-label={`Ver o case ${study.client.name}: ${study.title}`}
-        className="group relative flex h-full flex-col justify-between overflow-hidden rounded-lg border border-line bg-surface p-5 transition-colors duration-500 hover:border-accent/45 lg:p-6"
+        className="group relative isolate flex h-full flex-col justify-between overflow-hidden rounded-lg border border-line bg-surface p-5 transition-colors duration-500 hover:border-accent/45 lg:p-6"
       >
         {/* Imagem de fundo */}
         <Image
